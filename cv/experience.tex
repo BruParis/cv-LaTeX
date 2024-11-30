@@ -1,0 +1,160 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+	%---------------------------------------------------------
+	\cventry
+	{Ingénieur Machine Learning - DevOps}
+	{IA Sport analytics}
+	{Deeptimize} % Organization
+	{Paris} % Location
+	{Juin 2023 - Aujourd'hui} % Date(s)
+	{
+		\begin{cvitems}
+			\item{Développement d'application Computer Vision: \textbf{Python}, \textbf{OpenCV}}
+			\item{Training\slash Evaluation de modèles Deep-learning}
+			\begin{itemize}
+				\item{Library: \textbf{Pytorch}, \textbf{CUDA}}
+				\item{Modèles Videos: \textbf{ViT}, \textbf{VideoMAE}, etc. \textit{Temporal Action Detection}: \textbf{Slowfast}, \textbf{ActionFormer}, etc.}
+				\item{Entraînement et Validation de modèles: Orchestration \textbf{Slurm} sur \textit{HPC}. Contexte de calculs distribués: \textbf{Pytorch Lightning}.}
+				\item{Optimisation mémoire\slash temps de calcul: \textbf{TensorRT}}
+				\item{Devices GPU: \textbf{V100}\slash \textbf{A100}\slash \textbf{H100}}
+			\end{itemize}
+			\item{DevOps - MlOps}
+			\begin{itemize}
+				\item{Déploiement de modèles: \textbf{Docker}}
+				\item{Infrastructure Cloud AWS: \textbf{S3}, \textbf{Dynamodb}, \textbf{Lambda}, \textbf{Sagemaker}, \textbf{ECR}, ... Code \textbf{Terraform}}
+			\end{itemize}
+			\item{Développement App Frontend: \textbf{React}}
+			\item{Développement d'outils internes (gestionnaire de dataset, review\slash debug pour support client)}: \textbf{Django}, \textbf{Flaskapp}
+		\end{cvitems}
+	}
+
+	\cventry
+	{Ingénieur de Recherche}
+	{Lutte anti-drone - Detection\slash Tracking LiDAR}
+	{CS-Group - Business Unit Défense et Sécurité} % Organization
+	{Le Plessis - Robinson} % Location
+	{Septembre 2022 - Juin 2023} % Date(s)
+	{
+		\begin{cvitems}
+			\item{Traitement temps réel de données LiDAR - \textbf{C++}}
+			\begin{itemize}
+				\item{Cartographie 3D: algo \textit{Octree}, \textit{Voxels}, \textbf{Point Cloud Library (PCL)}}
+				\item{Tracking Multi-Objets: algo \textit{Kalman Filter}, \textit{Gaussian Mixture Probability Hypothesis Density Filter}}
+			\end{itemize}
+			\item{Système embarqué sur Drone}
+			\begin{itemize}
+				\item{Interfaces modules tracking\slash navigation: IPC via \textbf{Socket UNIX}}
+				\item{Communication asynchrone avec base terrestre: broker \textbf{MQTT}, \textbf{Redis}}
+				\item{Hardware: \textbf{NVIDIA Jetson}}
+			\end{itemize}
+			\item{Outil de visualisation: \textbf{PyQT}}
+			\item{Méthodologie Conception\slash Développement \slash Validation}
+			\begin{itemize}
+				\item{Intégration au sein d'un système plus large de détection\slash neutralisation de drones}
+				\item{Equipe: Architecte système, 2 Développeurs Navigation\slash Tracking, Chef de projet}
+				\item{Tests validations réguliers en espace de vol dedié aux drones.}
+			\end{itemize}
+		\end{cvitems}
+	}
+
+	\cventry
+	{Développeur - Architecte Logiciel}
+	{Système de simulation de contrôle aérien}
+	{CS-Group - Business Unit Aéronautique} % Organization
+	{Le Plessis - Robinson} % Location
+	{Décembre 2019 - Août 2022} % Date(s)
+	{
+		\begin{cvitems}
+			\item{Développpement \textbf{C++}}
+			\begin{itemize}
+				\item{Conception\slash Architecture\slash logicielle \textbf{C++}}
+				\item{Simulation distribuée: contraines temps réel, synchronisation d'entitées distribuées. Standard \textbf{High Level Architecture (HLA)}}
+				\item{Problématiques OOP: \textbf{variadic templates}, \textbf{ORM}}
+				\item{Intéractions réseau: Communication avec modules externes à la simulation (\textbf{API JSON-RPC}), monitoring \textbf{WireShark}, \textbf{tcdump}}
+				\item{IHM: \textbf{Qt}, \textbf{qml}}
+			\end{itemize}
+			\item{Simulation Physique}
+			\begin{itemize}
+				\item{Méthodes d'intégration numériques: \textit{Runge-Kutta 4}}
+				\item{Calculs de trajectoires aéronautique, routes de vol, impact météo, trajectoires au sol \textit{Courbes de Bézier}}
+			\end{itemize}
+			\item{Base de données}
+			\begin{itemize}
+				\item{Modèles aéronautiques (Base of aircraft data Eurocontrol), Scénarios\slash Configuration de simulation: \textbf{PostgreSQL}}
+				\item{Migration, maintenance: \textbf{Liquibase}}
+			\end{itemize}
+			\item{Equipe et organisation}
+			\begin{itemize}
+				\item{Equipe de dev: 8 personnes}
+				\item{Sprint réguliers, contrôle qualité: outil internes kanban}
+				\item{Rôles tenus: Design avec product owner, assistance au chef de projet, supervision des réunions techniques.}
+			\end{itemize}
+			\item{Environnement}
+			\begin{itemize}
+				\item{OS: Système d'exploitation durci interne, basé sur \textbf{Gentoo}}
+				\item{Dev., test et déploiement: \textbf{qtCreator}, \textbf{git}, \textbf{Gerrit}, \textbf{Jenkins}}
+			\end{itemize}
+		\end{cvitems}
+	}
+
+	\cventry
+	{Développeur Algo - Computer Vision}
+	{IA "Smart court" pour clubs de tennis}
+	{PlayR - Mojjo} % Organization
+	{Paris, 75019} % Location
+	{Mai 2016 - Juillet 2019} % Date(s)
+	{
+		\begin{cvitems}
+			\item {Développement \textbf{C++} de traitement d'images/vidéos}
+			\begin{itemize}
+				\item {Librairie\slash Outils: \textbf{OpenCV}, \textbf{ffmpeg}}
+				\item {Conception\slash Architectur logicielle \textit{Design Patterns}}
+				\item {Contraintes temps réel, multi-threading, accélération GPU}
+				\item {Profiling d'application: \textbf{gprof}}
+			\end{itemize}
+			\item {Reconnaissance de formes}
+			\begin{itemize}
+				\item {Réseaux de neurones: \textbf{Caffe}, \textbf{MLP}\slash \textbf{Convolution}\slash \textbf{Autoencoder}}
+				\item {Script training\slash évaluation: \textbf{Python}}
+			\end{itemize}
+			\item {Développement IHM}
+			\begin{itemize}
+				\item {Interfaces utilisateurs: \textbf{AngularJS}}
+				\item {Outils internes: debug, R\&D, etc. \textbf{Qt}}
+			\end{itemize}
+			\item {Administration Système \- Infrastructure}
+			\begin{itemize}
+				\item {Automatisation: \textbf{CRON}, \textbf{systemd}}
+				\item {Environnement GPU: \textbf{CUDA}, \textbf{cuDNN}}
+				\item {Gestion bucket vidéo: \textbf{AWS s3}}
+			\end{itemize}
+			\item {Support client}
+			\begin{itemize}
+				\item {Suivi statistique et debug de l'usage: \textbf{Microsoft Dynamics CRM}}
+			\end{itemize}
+			\item {Equipe et Organisation}
+			\begin{itemize}
+				\item {Petite équipe dev: 3 personnes}
+				\item {Sprints réguliers, suivi roadmap: \textbf{Trello}}
+				\item {Collaboration régulière avec UX Designer et Product Owner}
+			\end{itemize}
+			\item {Environnement}
+			\begin{itemize}
+				\item {OS: \textbf{Ubuntu}}
+				\item {Dev: \textbf{VSCode}, \textbf{Git}}
+				\item {Toolchain: \textbf{g++}, \textbf{CMake}, \textbf{gdb}}
+			\end{itemize}
+		\end{cvitems}
+	}
+
+	%---------------------------------------------------------
+\end{cventries}
