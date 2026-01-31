@@ -11,7 +11,7 @@
 %-------------------------------------------------------------------------------
 %                Identification
 %-------------------------------------------------------------------------------
-\ProvidesClass{documentclass-cv}[Bruno Paris CV]
+\ProvidesClass{cv}[Bruno Paris CV]
 \NeedsTeXFormat{LaTeX2e}
 
 
