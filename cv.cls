@@ -25,6 +25,21 @@
 % Options for draft or final
 \DeclareOption{draft}{\setlength\overfullrule{5pt}}
 \DeclareOption{final}{\setlength\overfullrule{0pt}}
+
+% Language options (default: french)
+\newif\if@cvfrench
+\newif\if@cvenglish
+\@cvfrenchtrue
+\DeclareOption{french}{\@cvfrenchtrue\@cvenglishfalse}
+\DeclareOption{english}{\@cvfrenchfalse\@cvenglishtrue}
+
+% Format options (default: long)
+\newif\if@cvshort
+\newif\if@cvlong
+\@cvlongtrue
+\DeclareOption{short}{\@cvshorttrue\@cvlongfalse}
+\DeclareOption{long}{\@cvshortfalse\@cvlongtrue}
+
 % Inherit options of article
 \DeclareOption*{%
 	\PassOptionsToClass{\CurrentOption}{article}
@@ -82,6 +97,26 @@
 }
 % Solves issues Warning: File `cv.out' has changed
 \RequirePackage{bookmark}
+
+%-------------------------------------------------------------------------------
+%                Language and format conditionals
+%-------------------------------------------------------------------------------
+% Public conditionals for use in content files
+\newcommand{\ifcvfrench}[2]{\if@cvfrench#1\else#2\fi}
+\newcommand{\ifcvenglish}[2]{\if@cvenglish#1\else#2\fi}
+\newcommand{\ifcvshort}[2]{\if@cvshort#1\else#2\fi}
+\newcommand{\ifcvlong}[2]{\if@cvlong#1\else#2\fi}
+
+% Convenience commands for conditional content
+\newcommand{\shortonly}[1]{\if@cvshort#1\fi}
+\newcommand{\longonly}[1]{\if@cvlong#1\fi}
+
+% Get current language as string
+\newcommand{\cvlang}{\if@cvfrench fr\else en\fi}
+\newcommand{\cvformat}{\if@cvshort short\else long\fi}
+
+% Sections directory based on language
+\newcommand{\sectiondir}{sections/\cvlang}
 
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
