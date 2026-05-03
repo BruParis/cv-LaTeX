@@ -685,8 +685,8 @@
 	\end{center}
 }
 % Define an entry of cv information
-% Usage: \cventry{<position>}{<project>}{<title>}{<location>}{<date>}{<description>}
-\newcommand*{\cventry}[6]{%
+% Usage: \cventry{<position>}{<project>}{<title>}{<location>}{<date>}{<intro>}{<description>}
+\newcommand*{\cventry}[7]{%
 	\vspace{-2.0mm}
 	\setlength\tabcolsep{0pt}
 	\setlength{\extrarowheight}{0pt}
@@ -699,9 +699,12 @@
 		{\entrypositionstyle{#1} & \entrydatestyle{#5} \\}
 		{\entrypositionstyle{#2} & \entrydatestyle{#5} \\
     \entrypositionstyle{#1} & \\}
-		% No description
+		% Optional intro paragraph, in its own row
 		\ifstrempty{#6}{}
 		{\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}} \\}
+		% Items, in a separate row
+		\ifstrempty{#7}{}
+		{\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#7}} \\}
 	\end{tabular*}%
 }
 
