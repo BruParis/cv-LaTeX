@@ -19,10 +19,11 @@
 	{Développement d'IA appliquée à l'analyse de performance sportive par vision par ordinateur~: cycle complet de recherche et de mise en production de modèles deep learning, gestion de l'infrastructure cloud et développement d'outils métier.} % Intro
 	{
 		\begin{cvitems}
-			\item{\textbf{Algorithmique}~: modèles vidéo (\textbf{ViT}, \textbf{VideoMAE})~; détection d'actions temporelles (\textbf{Slowfast}, \textbf{ActionFormer})}
-			\item{\textbf{Technologies}~: \textbf{Python}, \textbf{OpenCV}, \textbf{PyTorch}, \textbf{CUDA}~; entraînement distribué sur HPC (\textbf{Slurm}, \textbf{PyTorch Lightning})~; optimisation \textbf{TensorRT}~; GPU \textbf{V100}\slash\textbf{A100}\slash\textbf{H100}}
-			\item{\textbf{DevOps \& MLOps}~: déploiement \textbf{Docker}~; infrastructure cloud AWS (\textbf{S3}, \textbf{DynamoDB}, \textbf{Lambda}, \textbf{SageMaker}, \textbf{ECR}) provisionnée avec \textbf{Terraform}}
-			\item{\textbf{Développement applicatif}~: interface de revue client (\textbf{React})~; outils internes --- gestionnaire de datasets, debug et support client (\textbf{Django}, \textbf{Flask}, \textbf{HTMX})}
+			\item{\textbf{Algorithmique}~: backbones vidéo (\textbf{ViT})~; détection temporelle (\textbf{ActionFormer})~; spatiale (\textbf{STMixer}, \textbf{RF-DETR}, \textbf{YOLO})}
+			\item{\textbf{Technologies}~: \textbf{Python}, \textbf{OpenCV}, \textbf{PyTorch}, \textbf{CUDA}~; entraînement distribué sur HPC~; optimisation \textbf{TensorRT}~; GPU \textbf{V100}\slash\textbf{A100}\slash\textbf{H100}}
+			\item{\textbf{DevOps \& MLOps}~: déploiement \textbf{Docker}~; infrastructure cloud \textbf{AWS} provisionnée avec \textbf{Terraform}}
+			\item{\textbf{Développement applicatif}~: interface client (\textbf{React})~; outils internes --- gestionnaire de datasets, debug et support client (\textbf{Django}, \textbf{Flask}, \textbf{HTMX})}
+			\item{\textbf{Conduite de projet}~: startup à forte composante R\&D~; pilotage de la maturité technologique de la preuve de concept à la mise en service~; arbitrage recherche\slash livraison opérationnelle}
 		\end{cvitems}
 	}
 
@@ -36,8 +37,8 @@
 	{
 		\begin{cvitems}
 			\item{\textbf{Algorithmique}~: cartographie 3D (\textit{Octree}, \textit{Voxels}, \textbf{PCL})~; pistage multi-objets (\textit{filtre de Kalman}, \textit{GM-PHD Filter})}
-			\item{\textbf{Technologies}~: traitement LiDAR temps réel \textbf{C++}~; système embarqué \textbf{NVIDIA Jetson}~; IPC via \textbf{Socket UNIX}~; communication asynchrone (\textbf{MQTT}, \textbf{Redis})~; visualisation \textbf{PyQt}}
-			\item{\textbf{Conduite de projet}~: intégration dans un système de détection et de neutralisation de drones~; équipe pluridisciplinaire~: architecte système, développeurs navigation\slash tracking, chef de projet~; cycles de validation en espace de vol dédié}
+			\item{\textbf{Technologies}~: traitement LiDAR temps réel \textbf{C++}~; système embarqué multi-processus \textbf{NVIDIA Jetson} (IPC \textbf{Socket UNIX})~; liaison sol--drone \textbf{MQTT}~; visualisation \textbf{PyQt}}
+			\item{\textbf{Conduite de projet}~: intégration dans un système de détection -neutralisation de drones~; équipe pluridisciplinaire~: architecte système, développeurs navigation\slash tracking, chef de projet~; cycles de validation en espace de vol dédié}
 		\end{cvitems}
 	}
 
@@ -50,9 +51,9 @@
 	{Conception et développement d'un simulateur de contrôle du trafic aérien~: simulation distribuée en temps réel, modélisation physique des trajectoires et gestion des données aéronautiques, dans un environnement de développement certifié.} % Intro
 	{
 		\begin{cvitems}
-			\item{\textbf{Algorithmique}~: simulation distribuée en temps réel (\textbf{HLA})~; intégration numérique (\textit{Runge-Kutta 4})~; modélisation de trajectoires (\textit{courbes de Bézier}, routes de vol, impact météo)}
-			\item{\textbf{Technologies}~: \textbf{C++} (architecture logicielle, \textbf{variadic templates}, \textbf{ORM}, \textbf{JSON-RPC}, \textbf{WireShark}\slash\textbf{tcpdump}, \textbf{Qt}\slash\textbf{QML})~; \textbf{PostgreSQL} (données BADA Eurocontrol)~; migrations \textbf{Liquibase}~; OS \textbf{Gentoo} durci~; \textbf{git}, \textbf{Gerrit}, \textbf{Jenkins}}
-			\item{\textbf{Conduite de projet}~: équipe de 8 développeurs~; sprints avec suivi qualité kanban~; rôles transversaux~: conception produit, assistance au chef de projet, animation technique}
+			\item{\textbf{Algorithmique}~: architecture distribuée temps réel (\textbf{HLA})~; intégration numérique (\textit{Runge-Kutta 4})~; modélisation de trajectoires (\textit{courbes de Bézier}, routes de vol, impact météo)}
+			\item{\textbf{Technologies}~: \textbf{C++} (architecture logicielle, architecture distribuée multi-nœuds (\textbf{TCP}, \textbf{JSON-RPC}), IHM \textbf{Qt}\slash\textbf{QML})~; \textbf{PostgreSQL}~; OS \textbf{Gentoo} durci}
+			\item{\textbf{Conduite de projet}~: équipe de 8 développeurs~; sprints avec suivi qualité kanban~; conception produit, assistance au chef de projet, animation technique}
 		\end{cvitems}
 	}
 
@@ -60,14 +61,14 @@
 	{Développeur Algo - Computer Vision}
 	{IA «~Smart court~» pour clubs de tennis}
 	{PlayR - Mojjo} % Organization
-	{Paris, 75019} % Location
+	{Paris} % Location
 	{Mai 2016 - Juillet 2019} % Date(s)
 	{Développement d'algorithmes de vision par ordinateur pour un système d'analyse automatique de matchs de tennis~: détection et classification en temps réel d'événements vidéo, de l'acquisition caméra à la restitution sur une interface web.} % Intro
 	{
 		\begin{cvitems}
-			\item{\textbf{Algorithmique}~: réseaux de neurones \textbf{Caffe} (MLP, CNN, Autoencoder)~; traitement image\slash vidéo en temps réel, multi-threading, accélération GPU~; \textit{Design Patterns}}
-			\item{\textbf{Technologies}~: \textbf{C++}, \textbf{OpenCV}, \textbf{ffmpeg}~; frontend \textbf{AngularJS}~; outils internes \textbf{Qt}~; infrastructure (\textbf{CRON}, \textbf{systemd}, \textbf{CUDA}, \textbf{cuDNN}, \textbf{AWS S3})~; toolchain \textbf{Ubuntu}\slash\textbf{CMake}\slash\textbf{gdb}}
-			\item{\textbf{Conduite de projet}~: équipe de 3 développeurs~; sprints \textbf{Trello}~; collaboration avec UX Designer et Product Owner~; support client (\textbf{Microsoft Dynamics CRM})}
+			\item{\textbf{Algorithmique}~: réseaux de neurones \textbf{Caffe} (MLP, CNN, Autoencoder)~; traitement image\slash vidéo en temps réel}
+			\item{\textbf{Technologies}~: \textbf{C++}, \textbf{OpenCV}, \textbf{ffmpeg}~; frontend \textbf{AngularJS}~; outils internes \textbf{Qt}}
+			\item{\textbf{Conduite de projet}~: environnement startup~; sprints \textbf{Trello}~; collaboration avec UX Designer et Product Owner}
 		\end{cvitems}
 	}
 
